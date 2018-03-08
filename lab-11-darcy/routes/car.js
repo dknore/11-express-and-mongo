@@ -6,7 +6,7 @@ const router = express.Router();
 const Car = require('../models/car.js');
 
 
-router.get('/car', (req, res) => {
+router.get('/', (req, res) => {
     console.log("inside app.get");
     let car = new Car({make: "Audi", model: "Q7", color: "Silver"});
     res.send(car);
